@@ -1,0 +1,84 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6{
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
+
+/* Main Styling code */
+
+body {
+  background-color: #f4f4f4;
+  background-image: url("./assets/curve-1s-1084px.png");
+  background-position: center;
+  background-repeat: repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2em;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+}
+
+.img_container{
+  width: 60%;
+  margin: 0 auto .5em;
+  max-width: 200px;
+  border-radius: 50%;
+} .img_container img{
+  border-radius: 50%;
+}
+
+.slack_name {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: .5em;
+}
+
+.text_sections{
+  margin: .5em 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-direction: column;
+} .text_sections h2{
+  font-size: 1.25rem;
+}.text_sections a{
+  width: 100%;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

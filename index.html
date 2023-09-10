@@ -4,14 +4,39 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Sodiq Sanusi">
+  <meta name="author" content="Sodiq `Sanusi">
   <meta name="description" content="Stage one project to proceed to stage two">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
   <title>HNG X Stage One Task</title>
 </head>
 <body>
-  
-
+  <main class="container">
+    <div>
+      <div class="img_container"><img src="./assets/closeup.jpeg" alt="Ade, or Rogue" data-testid="slackDisplayImage"></div>
+      <h1 data-testid="slackUserName" class="slack_name">Ade, or Rogue</h1>
+      <div class="text_sections">
+        <h2>Track:</h2>
+        <p data-testid="myTrack">Frontend</p>
+      </div>
+    </div>
+    <div>
+      <div class="text_sections">
+        <h2>GitHub URL:</h2>
+        <a href="https://github.com/sodiqsanusi/hngx_stage1" target="_blank" rel="noopener" data-testid="githubURL">https://github.com/sodiqsanusi/hngx_stage1</a>
+      </div>
+      <div class="text_sections">
+        <h2>Current Day of the week:</h2>
+        <p data-testid="currentDayOfTheWeek" id="today">Monday</p>
+      </div>
+      <div class="text_sections">
+        <h2>Current UTC Time:</h2>
+        <p data-testid="currentUTCTime" id="time">23:67:98</p>
+      </div>
+    </div>
+  </main>
   <script src="./app.js"></script>
 </body>
 </html>
